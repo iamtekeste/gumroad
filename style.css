@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #494fec;
+  font-family: 'Overpass', sans-serif;
+}
+
+.wrapper {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.heading {
+  color: #fff;
+  font-size: 2.9em;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.sub-heading {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.embed-demo {
+  margin-top: 16px;
+}
+
+.gumroad-embed-source {
+  color: #fff;
+  font-weight: bold;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass:400,600"
+      rel="stylesheet"
+      class="next-head"
+    />
+    <title>Gumroad Demo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay-demo">
+        <div class="heading">Multiple Overlay Popups</div>
+        <div class="sub-heading">
+          I have made it so that you can have as many products as you want
+          without impacting the page load of the website. This is because the
+          iframes don't get loaded before the user clicks on the buy buttons.
+        </div>
+        <a class="gumroad-button" href="https://gum.co/demo"
+          >Buy demo product</a
+        >
+        <a class="gumroad-button" href="https://gum.co/cssscan">Buy CSS Scan</a>
+      </div>
+
+      <div class="embed-demo">
+        <div class="heading">Embedded Widget</div>
+        <div class="sub-heading">
+          You can also easily embed a widget and it will get loaded immediately.
+          If you don't run this after page load and if you have mulitple of
+          them, it could seriously impact the page load time. Use them sparsely
+          or make use of lazy loading to load them only if they get into the
+          user's view.
+        </div>
+        <a
+          class="gumroad-embed-source"
+          href="https://gum.co/cssscan"
+          data-display-style="embed"
+          >Loading...</a
+        >
+      </div>
+    </div>
+    <script src="gumRoadDev.js"></script>
+  </body>
+</html>
