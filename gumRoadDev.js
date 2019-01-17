@@ -46,6 +46,7 @@
           display: block;
           margin: 0 auto;
           max-width: 1024px;
+          cursor: initial;
         }
         .gumroad-iframe-wrapper.embed.loading {
           width: 100px;
@@ -118,8 +119,8 @@
 
         /**
          * Here is where we are handling whether it should be embeded directly,
-         * or wait for the user to click on the button, the attribute `data-display-style`
-         * dictates which style of display (button or embed) the user chose.
+         * or wait for the user to click on the button and open it as an overlay,
+         * the attribute `data-display-style` dictates which style of display (overlay or embed) the user chose.
          */
         if (displayStyle === 'embed') {
           iframeWrapper.classList.add('loading', 'embed');
