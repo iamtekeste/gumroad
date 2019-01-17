@@ -3,76 +3,61 @@
   style.id = 'gumroad-style';
   style.innerHTML = `
         a.gumroad-button {
-          background-color: white;
-          background-image: url(https://gumroad.com/button/button_bar.jpg);
-          background-repeat: repeat-x;
-          border-radius: 4px;
-          box-shadow: rgba(0, 0, 0, .4) 0 0 2px;
-          color: #999;
+          background: #ffcf42;
+          border-radius: 3px;
+          color: #333;
           display: inline-block;
-          font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 50px;
-          padding: 0 15px;
-          text-shadow: none;
-          text-decoration: none;
+          font-weight: bold;
           margin-right: 16px;
+          padding: 15px 15px;
+          text-decoration: none;
         }
         .gumroad-iframe-wrapper {
+          align-items: center;
           background: rgba(0,0,0,.0);
-          transition: background .3s linear;
-          position: fixed;
-          z-index: 99998;
+          cursor: pointer;
           display:flex;
           justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          top:0;
           left:0;
+          position: fixed;
+          top:0;
+          transition: background .3s linear;
+          z-index: 99998;
         }
         .gumroad-iframe-wrapper.loaded,
         .gumroad-iframe-wrapper.loading {
           background: rgba(0,0,0,0.6);
-          position:fixed;
           height: 100%;
           width: 100%;
         }
         .gumroad-iframe-wrapper.embed {
-          height: 573px;
           background: transparent;
-          position: initial;
+          cursor: initial;
           display: block;
+          height: 573px;
           margin: 0 auto;
           max-width: 1024px;
-          cursor: initial;
+          position: initial;
         }
         .gumroad-iframe-wrapper.embed.loading {
-          width: 100px;
           height: 50px;
-          background: transparent;
+          width: 100px;
         }
         .gumroad-iframe-wrapper.loading:before {
-          display: flex;
-          justify-content: center;
           align-items: center;
-          width: 200px;
-          height: 50px;
           background: #fff;
           color: #333;
           content: 'Loading';
-          position: fixed;
+          display: flex;
+          justify-content: center;
+          padding: 10px 50px;
         }
         .gumroad-iframe-wrapper.embed.loading:before {
-          width: 100px;
-          height: 50px;
-          background: transparent;
           display: none;
         }
         .gumroad-iframe-wrapper.loaded .gumroad-iframe {
-          width: 100%;
           height: 564px;
+          width: 100%;
         }
         .gumroad-iframe {
           max-width: 670px;
@@ -80,9 +65,6 @@
           border:none;
           width:0;
           height:0;
-        }
-        .gumroad-loading-spinner {
-          width: 200px;
         }
       `;
   document.head.appendChild(style);

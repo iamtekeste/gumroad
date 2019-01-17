@@ -1,17 +1,16 @@
 body,
 html {
-  margin: 0;
-  padding: 0;
   background: #494fec;
   font-family: 'Overpass', sans-serif;
+  margin: 0;
   padding: 20px;
 }
 
 .wrapper {
-  max-width: 1024px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  max-width: 1024px;
 }
 
 .heading {
@@ -25,8 +24,8 @@ html {
 .sub-heading {
   color: #fff;
   font-size: 20px;
-  margin-bottom: 16px;
   line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 .embed-demo {
